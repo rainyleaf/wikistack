@@ -17,4 +17,12 @@ app.get('/', (req, res) => {
     res.send(layout(''));
 });
 
-app.listen(3000, 'localhost', () => console.log('listening at port 3000'));
+// this drops all tables then recreates them based on our JS definitions
+//models.db.sync({force: true})
+
+const init = async () => {
+    await db.sync();
+    app.listen(3000, 'localhost', () => console.log('listening at port 3000'));
+}
+
+init();
