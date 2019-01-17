@@ -1,0 +1,29 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "description": "FSA wikistack pair project",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainyleaf/wikistack.git"
+  },
+  "author": "Torri Raines and Lydie Toussaint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rainyleaf/wikistack/issues"
+  },
+  "homepage": "https://github.com/rainyleaf/wikistack#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "html-template-tag": "^2.0.0",
+    "morgan": "^1.9.1",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
